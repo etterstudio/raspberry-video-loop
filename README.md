@@ -14,6 +14,8 @@ How to play video on boot on Raspberry Pi
  8. sudo chmod +x /etc/rc.local
  9. Done
  
-10. to video loop open terminal: 
+ - - - 
+ 
+10. to quit video loop open terminal: 
 11. Ctrl + Alt + t
 12. killall omxplayer
