@@ -9,7 +9,7 @@ How to play video on boot on Raspberry Pi
 
 # /usr/bin/omxplayer -b --loop /home/pi/Desktop/loop.mov
  
- 6. Ctrl + X 
+ 6. Ctrl + x
  7. Confirm
  8. sudo chmod +x /etc/rc.local
  9. Done
