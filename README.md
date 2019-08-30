@@ -23,6 +23,7 @@ How to auto-play video loop on boot on Raspberry Pi
  - - - 
  
 to quit video loop open terminal: 
-1. Ctrl + Alt + t
+
+Ctrl + Alt + t
 
 `killall omxplayer`
