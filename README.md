@@ -24,7 +24,7 @@ How to auto-play video loop on boot on Raspberry Pi
  
  - - - 
  
-to quit video loop open terminal: 
+to quit video loop open terminal with shortcut: 
 
 Ctrl + Alt + t
 
