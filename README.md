@@ -1,5 +1,5 @@
-# raspberry-video-loop
-How to play video on boot on Raspberry Pi
+# raspberry video loop
+How to auto-play video loop on boot on Raspberry Pi
 
 1. Open terminal 
 
