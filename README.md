@@ -3,7 +3,7 @@ How to auto-play video loop on boot on Raspberry Pi
 
 - - -
 
-1. When Raspberry running open terminal (little icon on top left)
+1. When Raspberry running open terminal (little >_ icon on top left)
  
 2. Type lines and always confirm with enter
 
