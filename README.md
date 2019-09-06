@@ -5,7 +5,7 @@ How to auto-play video loop on boot on Raspberry Pi
 
 0. Place file named `loop.mov` on desktop. Name can be different, just make sure same name is in code below. Also make sure OMX Player support the codec you use on your video.
 
-1. When Raspberry running open terminal (little >_ icon on top left)
+1. Open terminal (little >_ icon on top left)
  
 2. Type lines and always confirm with enter
 
