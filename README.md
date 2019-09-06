@@ -15,7 +15,8 @@ How to auto-play video loop on boot on Raspberry Pi
 
 3. Replace text with
 
-```#!/bin/sh -e
+```
+#!/bin/sh -e
 
 #
 
@@ -43,7 +44,8 @@ lxterminal -e omxplayer
 /usr/bin/omxplayer -b --loop /home/pi/Desktop/loop.mov
 
 
-exit 0```
+exit 0
+```
 
  
  4. Ctrl + x
