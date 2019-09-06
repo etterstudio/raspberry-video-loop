@@ -15,35 +15,35 @@ How to auto-play video loop on boot on Raspberry Pi
 
 3. Replace text with
 
-`#!/bin/sh -e`
+```#!/bin/sh -e
 
-`#`
+#
 
-`#`
+#
 
-`# This script is executed at the end of each multiuser runlevel.`
+# This script is executed at the end of each multiuser runlevel.
 
-`# Make sure that the script will "exit 0" on success or any other`
+# Make sure that the script will "exit 0" on success or any other
 
-`# value on error.`
+# value on error.
 
-`#`
+#
 
-`# In order to enable or disable this script just change the execution`
+# In order to enable or disable this script just change the execution
 
-`# bits.`
+# bits.
 
-`#`
+#
 
-`# By default this script does nothing.`
-
-
-`lxterminal -e omxplayer`
-
-`/usr/bin/omxplayer -b --loop /home/pi/Desktop/loop.mov`
+# By default this script does nothing.
 
 
-`exit 0`
+lxterminal -e omxplayer
+
+/usr/bin/omxplayer -b --loop /home/pi/Desktop/loop.mov
+
+
+exit 0```
 
  
  4. Ctrl + x
