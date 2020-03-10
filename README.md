@@ -3,64 +3,19 @@ How to auto-play video loop on boot on Raspberry Pi
 
 - - -
 
-0. Place file named `loop.mov` on desktop. Name can be different, just make sure same name is in code below. Also make sure OMX Player support the codec you use on your video.
-
-1. Open terminal (little >_ icon on top left)
+## autoload raspberry video 
+1. Reinstall OS if already on unbreakable auto-loop 
+2. Place .mov or .mp4 file on desktop, in this example `loop.mov`
+3. Create `autostart` folder here: `/home/pi/.config/autostart` 
+4. In this `autostart` folder create a text file called `.desktop` and put in the following: 
  
-2. Type lines and always confirm with enter
-
-`sudo apt-get update` 
-
-`sudo apt-get install omxplayer` 
-
-`sudo nano /etc/rc.local` 
-
-3. Replace text with
-
 ```
-#!/bin/sh -e
+[Desktop Entry]
 
-#
+Type=Application
 
-#
+Exec=lxterminal -e "omxplayer -b --loop --no-osd /home/pi/Desktop/loop.mov"
+``` 
+5. Make file executable in terminal:
 
-# This script is executed at the end of each multiuser runlevel.
-
-# Make sure that the script will "exit 0" on success or any other
-
-# value on error.
-
-#
-
-# In order to enable or disable this script just change the execution
-
-# bits.
-
-#
-
-# By default this script does nothing.
-
-
-lxterminal -e omxplayer
-
-/usr/bin/omxplayer -b --loop /home/pi/Desktop/loop.mov
-
-
-exit 0
-```
-
- 
- 4. Ctrl + x
- 5. Confirm
- 
-`sudo chmod +x /etc/rc.local`
-
- 6. Done
- 
- - - - 
- 
-to quit video loop open terminal with shortcut: 
-
-Ctrl + Alt + t
-
-`killall omxplayer`
+`sudo chmod +x /home/pi/.config/autostart/.desktop` 
